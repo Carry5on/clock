@@ -59,3 +59,35 @@ body {
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(1,-0.1,.11,1.16);
 }
+
+.linkButton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+input {
+    text-align: center;
+    width: 200px;
+    height: 80px;
+    margin-bottom: 5vw;
+    font-size: 130%;
+    background-color: #a40086;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+input:hover {
+    border: 2px solid #f9f871;    
+    cursor: pointer;
+    background-color: #4e0040;
+}
+
+input:active, input:focus {
+    outline: none;
+    border: 2px solid #4e0040;    
+    cursor: pointer;
+    color: black;
+    background-color: #f9f871;
+}
