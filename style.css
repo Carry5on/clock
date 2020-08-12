@@ -1,0 +1,61 @@
+body {
+    background-image: url(./aida-3209004_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;    
+}
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.clock {
+    display: flex;
+    border: 15px solid white;
+    border-radius: 100%;
+    width:200px;
+    height: 200px;
+    align-items: center;   
+    
+}
+
+.hours-hand {
+    background-color: black;
+    border-radius: 50px;
+    height: 12px;
+    width: 80px;
+    margin-left: 20px;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: right;
+}
+
+.minutes-hand {
+    background-color: #a40086;
+    border-radius: 50px;
+    height: 7px;
+    width: 90px;
+    margin-left: 10px;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: right;
+}
+
+.seconds-hand {
+    background-color: #f9f871;
+    border-radius: 50px;
+    height: 5px;
+    width: 95px;
+    margin-left: 5px;
+    position:absolute;
+    transform: rotate(0deg);
+    transform-origin: right;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(1,-0.1,.11,1.16);
+}
